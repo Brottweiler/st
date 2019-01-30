@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "lucy tewi:pixelsize=8:antialias=true:autohint=true";
+static char *font = "lucy tewi:pixelsize=9:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*

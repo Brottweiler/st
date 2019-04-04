@@ -13,7 +13,7 @@ url="http://st.suckless.org"
 source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz
         config.h)
 sha256sums=('aeb74e10aa11ed364e1bcc635a81a523119093e63befd2f231f8b0705b15bf35'
-            '4b9bcfd0494db860af6793806201b1f70850aedd296e1370dc7e067677c80539')
+            'e3970e8c3c95a10a21d0e03007de4f2cc09b104bd6a5be1f02a6e3486a4c2bd7')
 
 prepare() {
   cd $srcdir/$pkgname-$pkgver

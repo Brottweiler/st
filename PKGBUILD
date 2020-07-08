@@ -11,18 +11,12 @@ arch=('i686' 'x86_64' 'armv7h')
 license=('MIT')
 depends=(libxft)
 url=https://st.suckless.org
-source=(https://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz
-        terminfo.patch
-        README.terminfo.rst)
-sha256sums=('d42d3ceceb4d6a65e32e90a5336e3d446db612c3fbd9ebc1780bc6c9a03346a6'
-            'f9deea445a5c6203a0e8e699f3c3b55e27275f17fb408562c4dd5d649edeea23'
-            '0ebcbba881832adf9c98ce9fe7667c851d3cc3345077cb8ebe32702698665be2')
+source=(https://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz)
+sha256sums=('d42d3ceceb4d6a65e32e90a5336e3d446db612c3fbd9ebc1780bc6c9a03346a6')
 _sourcedir=$pkgname-$pkgver
 _makeopts="--directory=$_sourcedir"
 
 prepare() {
-  patch --directory="$_sourcedir" --strip=0 < terminfo.patch
-
   # This package provides a mechanism to provide a custom config.h. Multiple
   # configuration states are determined by the presence of two files in
   # $BUILDDIR:
@@ -67,6 +61,5 @@ package() {
   make $_makeopts PREFIX=/usr DESTDIR="$pkgdir" install
   install $installopts "$licdir" "$_sourcedir/LICENSE"
   install $installopts "$docdir" "$_sourcedir/README"
-  install $installopts "$docdir" README.terminfo.rst
   install $installopts "$shrdir/$pkgname" "$_sourcedir/st.info"
 }

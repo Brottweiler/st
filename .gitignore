@@ -4,3 +4,4 @@ config.def.h
 st-*.pkg.tar.xz
 st-*.tar.gz
 st-*.tar.zst
+*.diff

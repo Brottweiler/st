@@ -15,7 +15,7 @@ source=("https://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz"
         "config.h"
         "https://st.suckless.org/patches/ligatures/0.8.3/st-ligatures-20200430-0.8.3.diff")
 sha256sums=('d42d3ceceb4d6a65e32e90a5336e3d446db612c3fbd9ebc1780bc6c9a03346a6'
-            '0ca14820415f9cf090176499c07e4592bc9c1dbd5a7dd261d0d97eb7bce37d1d'
+            'b29f3ac51cba163a15219d726f2d032286806748dd102a03626427c6240b3a88'
             '67b668c77677bfcaff42031e2656ce9cf173275e1dfd6f72587e8e8726298f09')
 _sourcedir=$pkgname-$pkgver
 _makeopts="--directory=$_sourcedir"

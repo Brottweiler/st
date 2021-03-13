@@ -4,5 +4,4 @@
 # Features
 - [Cascadia Code](https://github.com/microsoft/cascadia-code) font
 - [Ligatures](https://st.suckless.org/patches/ligatures/) patch
-- [ZShell](https://www.zsh.org/)
 - `base16/google.dark` color scheme
